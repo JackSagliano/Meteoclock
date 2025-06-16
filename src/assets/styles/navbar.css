@@ -1,0 +1,96 @@
+
+/* Rimuove lo spinner dall'input (freccette su e giù)*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+.nav {
+  width: 100%;
+  padding: 25px 100px;
+  background: #adeffd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+#logo {
+  width: 250px;
+  height: auto;
+  mix-blend-mode:darken;
+}
+
+
+.search-box {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 45px;
+  max-width: 400px;
+  width: 100%;
+  padding: 0 10px 0 15px;
+  border-radius: 6px;
+}
+
+.search-box .search-icon {
+  cursor: pointer;
+  margin-right: 10px;
+  color: #000000;
+  font-size: 20px;
+}
+.search-box input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  
+  background-color: #fff;
+  
+}
+
+
+@media screen and (max-width: 1160px) {
+  .nav {
+    padding: 25px 100px;
+  }
+  .nav .search-box {
+    right: 150px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .nav {
+    padding: 25px 50px;
+  }
+  
+  .nav .search-box {
+    right: 100px;
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 820px) {
+  
+  .nav .search-icon {
+    display:none;
+  }
+  .search-box .search-icon {
+    display: block;
+  }
+  .nav {
+    justify-content: center;
+    padding: 15px 20px;
+  }
+
+  .nav .search-box {
+    position: static; 
+    margin-top: 10px;
+    max-width: 100%;
+   
+    right: auto;
+    top: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+}
