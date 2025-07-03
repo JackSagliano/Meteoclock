@@ -23,6 +23,7 @@ Tramite **Zippopotam.us** è possibile convertire un CAP italiano in coordinate 
 
 📌 URL di esempio:  
 https://api.zippopotam.us/it/53100
+
 🔁Risultato:  
 Coordinate della località corrispondente al CAP 53100 (es. Siena).
 
